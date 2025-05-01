@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Palindrome Checker</h1>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Enter a String">
+        </div>
+        <div>
+        <button type="submit" onclick="check()">Check</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function check(){
+            let str = document.getElementById("input").value  
+            // let newStr = str.replace(/[!@#$%^&*()_+\-=\`~\[\]\\\{\}\|;':",.\/<>\?]/g, "_");
+
+            str = str.replaceAll(/[!@#$%^&*()_+\-=\`~\[\]\\\{\}\|;':",.\/<>\?]/g, "").toLowerCase().replaceAll(" ","")  // Replace all special characters
+            console.log(str)
+            let rev_str =  str.split("").reverse().join().replaceAll(",","") // convert string to array, then reverse, then convert array to string
+            console.log(rev_str)
+            if ( str!="" && str == rev_str )
+                document.getElementById("result").innerHTML = "Palindrome"
+            else
+                document.getElementById("result").innerHTML = "Not a Palindrome"
+        }
+    </script>
+</body>
+</html>

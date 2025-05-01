@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <h2>Sign In Page</h2>
+  <div class="container">
+    <!-- <h2>Sign in page</h2> -->
+    <form>
+      <!-- <i class="fas fa-paper-plane"></i> -->
+      <i class="fa-brands fa-twitter"></i>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact_name" onkeyup="validateName()">
+        <span id="name_error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contact_phone" onkeyup="validatePhone()">
+        <span id="ph_error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact_email" onkeyup="validateEmail()">
+        <span id="email_error"></span>
+      </div>
+      
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" id="password" onkeyup="validatePassword()">
+        <span id="password_error"></span>
+      </div> 
+
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" id="cpassword" onkeyup="validateCpassword()">
+        <span id="cpass_error"></span>
+      </div>
+
+      <div class="input-group">
+        <label style="margin-top: 10px;">Gender</label>
+        <div class="gender">
+          <div class="g1">
+            <label for="">Male</label>
+            <input type="radio" name="gender" value="Male" !important>
+          </div>
+          <div class="g2">
+            <label for="">Female</label>
+            <input type="radio" name="gender" value="Female">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group" style="margin-top: 20px;">
+        <label for="">Date Of Birth</label>
+        <input type="date" name="" id="" style="color:grey;" required>
+      </div>
+
+      <div class="input-group">
+        <label>Home Address</label>
+        <textarea rows="5" placeholder="Enter your Address" id="contact_address" onkeyup="validateAddress()"></textarea>
+        <span id="addr_error"></span>
+      </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit_error"></span>
+   
+  </form>
+  </div>
+  <script src="script.js"></script>
+   
+</body>
+</html>

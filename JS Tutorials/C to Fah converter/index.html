@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Celsius to Fahrenheit</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Temperature in deg C">
+            <div>
+                <button type="submit" onclick="convert()">Convert Celsius to Fahrenheit</button>
+            </div>
+            <div id="result">
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function convert(){
+            const cval = Number(document.getElementById("input").value)
+            const fval = (cval*1.8) + 32
+            const result = document.getElementById("result")
+            result.innerHTML= fval.toFixed(2) + " deg F"
+        }
+
+    </script>
+</body>
+</html>

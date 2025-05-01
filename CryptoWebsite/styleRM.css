@@ -1,0 +1,225 @@
+/* Google Font Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --color-1:#fff;
+    --color-2:rgb(255,255,255,0.6);
+    --color-3:#000;
+    --color-4:#00002c;
+    --color-5:#000024;
+    --color-6:#00b7c5;
+    --color-7:#08d3d3;
+
+}
+
+header{
+    width: 100%;
+    height: auto; 
+    background:var(--color-4);
+    overflow: hidden;
+}
+
+header .pos_fixed{
+    position: fixed;
+}
+header nav{
+    position: fixed;
+    width: 70%;
+    height:15%;
+    margin:30px auto;
+    /* border: 1px solid var(--color-1); */
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header nav ul{
+   list-style: none;
+   display: flex;
+   align-items:center;
+   
+}
+header nav ul li{
+    position: relative;
+    padding: 3px 15px;
+    z-index: 2;
+}
+/* For creating round before nav li  */
+header nav ul li:nth-child(4)::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height:20px;
+    background: rgba(154, 154, 150,0.5) ;
+    border-radius: 50%;
+    top:5px;
+    right:9px;
+    z-index: -1;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-1);
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+header nav ul li a:hover{
+    color: var(--color-2);
+}
+
+header nav button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header nav button:hover{
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+}
+
+.roadmap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    background:url(img/rocket_bg.png)no-repeat center center/cover;
+}
+
+.roadmap h1{
+    position: relative;
+    font-size: 30px;
+    padding-top: 50px;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.roadmap h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -20px;
+    left: 49%;
+    border-radius: 10px;
+}
+
+.roadmap p{
+    width: 400px;
+    margin: 50px auto 40px auto;
+    color: var(--color-1);
+    font-size: 13px;
+    text-align: center;
+}
+
+.roadmap .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.roadmap .map .card{
+    width: 355px;
+    height: 50px;
+    /* border: 1px solid var(--color-1); */
+    display: flex;
+    align-items: center;
+}
+
+.roadmap .map .card .title {
+    width:130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: var(--color-1);
+}
+
+.roadmap .map .card .title h6{
+    font-size: 11px;
+    color: var(--color-2);
+}
+
+.roadmap .map .card .title h4{
+    font-size: 12px;
+}
+
+.roadmap .map .card h5{
+    width: 30px;
+    height: 1px;
+    background: var(--color-2);
+    margin: 15px 5px;
+}
+
+.roadmap .map .card h2{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: var(--color-6);
+    border-radius: 50%;
+}
+
+.roadmap .map .card h2::before{
+    content:'';
+    position: absolute;
+    width: 2px;
+    height: 45px;
+    background: var(--color-6);
+    top: 5px;
+    left: 6px;
+}
+
+.roadmap .map .card:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.roadmap .map .card:nth-child(even) .title{
+    align-items: flex-start;
+}
+
+.roadmap .map .card:nth-last-child(1) h2::before{
+    display: none;
+}
+
+.roadmap .map .card:nth-last-child(1) h2{     /*dot*/
+    background: #3f3f7d;                 
+}
+
+.roadmap .map .card:nth-last-child(2) h2::before{   /* line*/
+    background: #3f3f7d;
+}
+
+.roadmap .map .card:nth-last-child(2) h2{
+    background: #3f3f7d;
+}
+
+.roadmap .map .card:nth-last-child(3) h2::before{
+    background: #3f3f7d;
+}
+
+.roadmap .map .card:nth-last-child(3) h2{
+    background: #3f3f7d;
+}
+

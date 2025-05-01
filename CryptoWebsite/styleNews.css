@@ -1,0 +1,202 @@
+/* Google Font Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --color-1:#fff;
+    --color-2:rgb(255,255,255,0.6);
+    --color-3:#000;
+    --color-4:#00002c;
+    --color-5:#000024;
+    --color-6:#00b7c5;
+    --color-7:#08d3d3;
+
+}
+
+header{
+    width: 100%;
+    height: auto; 
+    background:var(--color-4);
+    overflow: hidden;
+}
+
+header nav{
+    position: fixed;
+    width: 70%;
+    height:15%;
+    margin:30px auto;
+    /* border: 1px solid var(--color-1); */
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header nav ul{
+   list-style: none;
+   display: flex;
+   align-items:center;
+   
+}
+header nav ul li{
+    position: relative;
+    padding: 3px 15px;
+    z-index: 2;
+}
+/* For creating round before nav li  */
+header nav ul li:nth-child(5)::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height:20px;
+    background: rgba(154, 154, 150,0.5) ;
+    border-radius: 50%;
+    top:5px;
+    right:9px;
+    z-index: -1;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-1);
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+header nav ul li a:hover{
+    color: var(--color-2);
+}
+
+header nav button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header nav button:hover{
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+}
+
+.news {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: var(--color-5);
+}
+
+.news h1{
+    position: relative;
+    font-size:25px;
+    text-align: center;
+    color: var(--color-1);
+    padding-top: 40px;
+}
+
+.news h1::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    border-radius: 10px;
+    background-color: var(--color-6);
+    bottom: -20px;
+    margin-left: 100px;
+}
+
+.news .cards {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.news .cards {
+    width: 90%;  /*80% */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    /* border: 1px solid pink; */
+}
+
+.news .cards .card {
+    width: 350px;
+    height: 350px;
+    background-color: #28284e;
+    border-radius: 15px;
+    color: var(--color-1);
+    padding: 40px;
+    box-shadow: 0px 30px 25px -25px rgb(0,183,197,0.5);
+}
+
+.news .cards .card h6{
+    color: var(--color-7);
+}
+ .news .cards .card h2{
+    font-size: 18px;
+ }
+
+ .news .cards .card p{
+    font-size: 13px;
+    margin: 20px 0px;
+    line-height: 25px;
+    color: var(--color-2);
+ }
+
+ .news .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+ }
+
+ .news .btn button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 11px;
+    font-weight: 700;
+    margin: 40px 0px 30px 0px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.news .btn button:hover{
+    background: linear-gradient(0deg,#d0498d,#ae2c86);
+}
+
+ 
+@media screen and (max-width: 755px ){
+    header nav ul {
+        position: absolute;
+        top: -1px;
+        /* left: 2px; */
+    }
+    header nav ul li a {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,322 @@
+@media screen and (max-width: 1500px) {
+    header nav{
+        position: sticky;
+    }
+}
+
+
+
+@media screen and (max-width: 1188px) {
+    .rocket .rocket_content, .rocket_img {
+        width: 38%;
+    }
+    .news .cards {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 1132px) {
+    header nav {
+        width: 90%;
+    }
+    header section {
+        width: 90%;
+    }
+    .app .app_img_bx {
+        width: 47%;
+    }
+    .rocket .rocket_content, .rocket_img {
+        width: 45%;
+    }
+    .man .man_img, .man_content {
+        width: 40%;
+    }
+    .news .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news .cards .card{
+        margin: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 938px ) {
+    header section .img_data img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px ){
+    header{
+        height: auto;
+    }
+    header nav ul li {
+        padding: 3px 7px;
+    }
+    header nav ul li a {
+        font-size: 11px;
+    }
+    /* header section {
+        margin-top: 100px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    } */
+    .app .app_img_bx, .app_content_bx{
+        width: 45%;
+    }
+    .converter .cards {
+        flex-direction: column;
+    }
+    .converter .cards .card2 {
+        margin: 30px;
+    }
+    .rocket {
+        flex-direction: column-reverse;
+    }
+    .rocket .rocket_content, .rocket_img {
+        width: 70%;
+    }
+    .man .man_img, .man_content {
+        width: 46%;
+    }
+} 
+
+@media screen and (max-width: 755px ){
+
+    header nav .logo{
+        position: absolute;
+        left: -8px;
+        top: -14px;
+    }   
+    header nav ul {
+        position: absolute;
+        top: 15px;
+        left: 158px;
+    }
+    /* header nav ul li a {
+
+        margin-top:30px;
+        font-size: 10px;
+    } */
+    header nav button {
+        position: absolute;
+        right: -7px;
+        top: -5px;
+    }
+    header section{
+        
+        margin-top: 10px;
+    }
+
+    /* header section {
+        margin-top: 10px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+    }  */
+
+    header section .content, .img_data {
+        width: 70%;
+        margin-top:  30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+     
+    header section .img_data img{
+        width: 380px;;
+    }
+    header section .content{
+
+        flex-direction: column;
+        justify-content: center;
+    }
+    header section .content h1{
+        margin-right: auto;
+    }
+    /* header section .content p{ 
+        width: 380px; 
+    } */
+    header section .content button{
+        margin: 10px;
+    }
+    aside img{
+        margin: 0px;
+    }
+    .app{
+        flex-direction: column;
+    }
+
+    .app .app_img_bx, .app_content_bx{
+        width: 65%;
+    }
+    .man{
+        flex-direction: column;
+    }
+    .man .man_img, .man_content{
+        width: 75%;
+    }
+}
+@media all and (max-width: 708px){
+    header section .content{
+        margin-top: 100px;
+    }
+    header nav ul {
+        position: absolute;
+        top: 36px;
+        left: 6px;
+    }
+}
+@media all and (max-width: 600px){
+     header section {
+        margin-top: 10px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+    } 
+    header section .content{
+        margin-top: 9px;
+    }
+    header section .img_data img{
+            width: 366px;
+            margin-top: 24px;
+    } 
+}
+@media screen and (max-width: 469px){
+    /* header section {
+        margin-top: -50px;
+    }  */
+    header section {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    header section .content, .img_data{
+        justify-content: space-evenly;
+    }
+    header section .img_data img {
+        width: 336px;
+        margin-left: -27px;
+    }
+    header section .content {
+        align-items: flex-start;
+        margin-top: -20px;
+        margin-left: 30px;
+    }
+    header section .content h1{
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .app .app_img_bx, .app_content_bx{
+        width: 80%;
+    }
+    .rocket .rocket_content, .rocket_img {
+        width:80%
+    }
+    .man .man_img, .man_content{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 405px){
+    header nav ul li a {
+        font-size: 8px;
+    }
+    header section .img_data img {
+        margin-left: -51px;
+        width: 321px;
+        margin-bottom: 14px;
+    }
+    header section .content h1 {
+        font-size: 29px;
+        line-height: 42px;
+        margin-top: -20px;
+    }
+    header section .content p {
+        width: 300px;
+    }
+    aside .time span{
+        margin: 0px -15px;
+    }
+    aside .time h5 {
+        margin-top: -41px;
+    }
+    aside p {
+        font-size: 9px;
+        text-align: center;
+        width: 300px;
+    }
+    .converter .cards .card{
+        position: relative;
+        width: 310px;
+        height: 200px;
+    }
+    .app .app_content_bx h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .app .app_content_bx h1::before{
+        left: 5px;
+    }
+    .app .app_content_bx p {
+        font-size: 11px;
+    }
+    .converter h1 {
+        font-size: 28px;
+    }
+    .converter .cards .card .select .select1 select{
+        width: 185px;
+    }
+    .converter .cards .card .enter_bitcoin input{
+        width: 196px;
+    }
+    .rocket .rocket_img img {
+        width:80%;
+    }
+    .rocket .rocket_content p{
+        font-size: 11px;
+    }
+    .rocket .rocket_content ul li {
+        font-size: 12px;
+    }
+    .roadmap p {
+        width: 337px;
+        margin: 30px auto 40px auto;
+        font-size: 11px;
+    }
+    .roadmap h1::before {
+        bottom: -8px;
+        left: 43%;
+    }
+    .man .man_img img {
+        width:94%;
+    }
+}
+
+@media screen and (max-width: 355px){
+    .roadmap .map .card {
+        width: 331px;
+    }
+    .roadmap .map .card .title h6{
+        font-size: 11px;
+    }
+    .roadmap .map .card h5 {
+        width: 18px;
+    }
+    .man .man_img img {
+        margin-top: -47px;
+    }
+    .man .man_content {
+        padding-bottom: 47px;
+    }
+    .man .man_img, .man_content {
+        width: 75%;
+    }
+    .man .man_content h1 {
+        margin-top: -69px;
+    }
+    .man .man_content p {
+        margin-top: 32px;
+    }
+}
